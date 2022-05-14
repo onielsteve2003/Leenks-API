@@ -17,10 +17,6 @@ const linkRoute = require('./routes/api/link')
 app.use('/api', userRoute)
 app.use('/api', linkRoute)
 
-app.get('/api', () => {
-    res.send("Welcome to Leenks API")
-})
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
