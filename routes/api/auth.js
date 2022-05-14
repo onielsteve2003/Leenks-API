@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { signup, login, isAuthenticated, getUserData } = require('../../controllers/auth')
 
-router.get('/api', () => {
+router.get('/', () => {
     res.send("Welcome to Leenks API")
 })
 
